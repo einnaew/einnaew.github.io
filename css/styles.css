@@ -1,0 +1,32 @@
+div {
+  font-family: 'ibm plex mono', sans-serif;
+  font-size: 20px;
+  color: pink;
+  margin: auto;
+  text-align: left;
+  position: absolute;
+  padding-left: 20%;
+  padding-top: 20%;
+  line-height: 170%;
+}
+
+body {
+  background-color: rgb(46, 49, 75);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+h6 {
+  position: absolute;
+  font-family: 'ibm plex mono', sans-serif;
+  font-size: 10px;
+  color: pink;
+  bottom: 15px;
+  right: 20px;
+}
