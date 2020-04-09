@@ -39,14 +39,20 @@ a {
 a:hover {
   color: hotpink;
 }
-
 h6 {
-  position: absolute;
+  position: fixed;
   font-family: 'ibm plex mono', sans-serif;
   font-size: 10px;
   color: pink;
   bottom: 15px;
   right: 20px;
+}
+h5 {
+  font-family: 'ibm plex mono', sans-serif;
+  font-size: 15px;
+  color: pink;
+text-align: center;
+padding-top: 20px;
 }
 .aboutphoto {
   max-width: 1000px;
@@ -56,4 +62,22 @@ padding-top: 100px;
 padding-left: 80px;
 padding-bottom: 100px;
 float: left;
+}
+
+.container img:hover {
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+.container img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.container {
+  padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    justify-content: center;
 }
