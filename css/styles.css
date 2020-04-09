@@ -1,4 +1,4 @@
-div {
+.navigation {
   font-family: 'ibm plex mono', sans-serif;
   font-size: 20px;
   color: pink;
@@ -16,16 +16,16 @@ section {
 }
 
 p {
-    font-family: 'ibm plex mono', sans-serif;
-      font-size: 14px;
-      color: pink;
-      float: right;
-      text-align: left;
-        line-height: 200%;
-        margin-left: 10px;
-        padding-top: 200px;
-        padding-right: 100px;
-        padding-bottom: 100px;
+  font-family: 'ibm plex mono', sans-serif;
+  font-size: 14px;
+  color: pink;
+  float: right;
+  text-align: left;
+  line-height: 200%;
+  margin-left: 10px;
+  padding-top: 200px;
+  padding-right: 100px;
+  padding-bottom: 100px;
 }
 
 body {
@@ -39,6 +39,7 @@ a {
 a:hover {
   color: hotpink;
 }
+
 h6 {
   position: fixed;
   font-family: 'ibm plex mono', sans-serif;
@@ -47,37 +48,45 @@ h6 {
   bottom: 15px;
   right: 20px;
 }
+
 h5 {
   font-family: 'ibm plex mono', sans-serif;
   font-size: 15px;
   color: pink;
-text-align: center;
-padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
+
 .aboutphoto {
   max-width: 1000px;
   height: 500px;
   transform: rotate(90deg);
-padding-top: 100px;
-padding-left: 80px;
-padding-bottom: 100px;
-float: left;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
+  float: left;
 }
 
-.container img:hover {
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.portfolio-item {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.portfolio-item img:hover {
   opacity: 50%;
   transition: 0.5s;
 }
 
-.container img {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
-}
-.container {
-  padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 5px;
-    justify-content: center;
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
