@@ -10,6 +10,24 @@ div {
   line-height: 170%;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+    font-family: 'ibm plex mono', sans-serif;
+      font-size: 14px;
+      color: pink;
+      float: right;
+      text-align: left;
+        line-height: 200%;
+        margin-left: 10px;
+        padding-top: 200px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+}
+
 body {
   background-color: rgb(46, 49, 75);
 }
@@ -29,4 +47,13 @@ h6 {
   color: pink;
   bottom: 15px;
   right: 20px;
+}
+.aboutphoto {
+  max-width: 1000px;
+  height: 500px;
+  transform: rotate(90deg);
+padding-top: 100px;
+padding-left: 80px;
+padding-bottom: 100px;
+float: left;
 }
