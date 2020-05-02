@@ -1,13 +1,110 @@
-.navigation {
-  font-family: 'ibm plex mono', sans-serif;
-  font-size: 20px;
-  color: pink;
-  margin: auto;
-  text-align: left;
+body {
+  background-color: black;
+}
+
+html {
+  cursor: cell;
+}
+
+/*links*/
+a {
+  color: white;
+}
+
+/*splash page link animation*/
+.upper_left, .upper_right, .lower_left, .lower_right, .center {
+  font-family: 'cooper hewitt', sans-serif;
+  font-size: 23px;
+  line-height: 100%;
+  letter-spacing: 0.25em;
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #FF00E0, -2px 0 0 #15FF00;
+  }
+
+  to {
+    text-shadow: 2px 0.5px 2px #FF00E0, -1px -0.5px 2px #15FF00;
+  }
+}
+
+.upper_left:hover, .upper_right:hover, .lower_left:hover, .lower_right:hover, .center:hover {
+  animation-play-state: paused;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: pink;
+}
+
+/*splash page link positioning*/
+.upper_left {
   position: absolute;
-  padding-left: 20%;
-  padding-top: 20%;
-  line-height: 170%;
+  top: 0;
+  left: 0;
+  padding: 25px;
+}
+
+.upper_right {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  padding: 25px;
+}
+
+.lower_left {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  padding: 25px;
+}
+
+.lower_right {
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  padding: 25px;
+}
+
+.center {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/*navigation bar*/
+.navigation {
+
+display: flex;
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.navigation a {
+  font-family: 'cooper hewitt', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  color: pink;
+}
+
+.active {
+  color: cyan;
 }
 
 section {
@@ -16,8 +113,9 @@ section {
 }
 
 p {
-  font-family: 'ibm plex mono', sans-serif;
+  font-family: 'cooper hewitt', sans-serif;
   font-size: 14px;
+  letter-spacing: 0.15em;
   color: pink;
   float: right;
   text-align: left;
@@ -26,27 +124,6 @@ p {
   padding-top: 150px;
   padding-right: 100px;
   padding-bottom: 100px;
-}
-
-body {
-  background-color: rgb(46, 49, 75);
-}
-
-a {
-  color: white;
-}
-
-a:hover {
-  color: hotpink;
-}
-
-h6 {
-  position: fixed;
-  font-family: 'ibm plex mono', sans-serif;
-  font-size: 10px;
-  color: pink;
-  bottom: 15px;
-  right: 20px;
 }
 
 h5 {
@@ -90,6 +167,7 @@ h5 {
   height: 100%;
   object-fit: contain;
 }
+
 iframe {
   padding-top: 15px;
 }
