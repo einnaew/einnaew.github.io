@@ -12,7 +12,7 @@ a {
 }
 
 /*splash page link animation*/
-.upper_left, .upper_right, .lower_left, .lower_right, .center {
+.button {
   font-family: 'cooper hewitt', sans-serif;
   font-size: 23px;
   line-height: 100%;
@@ -33,7 +33,7 @@ a {
   }
 }
 
-.upper_left:hover, .upper_right:hover, .lower_left:hover, .lower_right:hover, .center:hover {
+.traditional_art:hover, .digital_art:hover, .photo:hover, .video:hover, .about:hover {
   animation-play-state: paused;
   font-weight: 600;
   text-decoration-line: underline;
@@ -41,35 +41,35 @@ a {
 }
 
 /*splash page link positioning*/
-.upper_left {
+.traditional_art {
   position: absolute;
   top: 0;
   left: 0;
   padding: 25px;
 }
 
-.upper_right {
+.digital_art {
   position: absolute;
   top: 0;
   right: 0%;
   padding: 25px;
 }
 
-.lower_left {
+.photo {
   position: absolute;
   bottom: 0%;
   left: 0;
   padding: 25px;
 }
 
-.lower_right {
+.video {
   bottom: 0%;
   right: 0%;
   position: absolute;
   padding: 25px;
 }
 
-.center {
+.about {
   position: absolute;
   margin: 0;
   top: 50%;
@@ -78,12 +78,10 @@ a {
   transform: translate(-50%, -50%)
 }
 
-
 /*navigation bar*/
 .navigation {
-
-display: flex;
-position: fixed;
+  display: flex;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -107,6 +105,18 @@ position: fixed;
   color: cyan;
 }
 
+/*page transitions*/
+.fadein {
+    opacity: 0;
+    transition: opacity 0.75s;
+
+}
+
+body.loaded .fadein {
+    opacity: 1;
+}
+
+/*other*/
 section {
   display: flex;
   flex-direction: row;
@@ -121,26 +131,12 @@ p {
   text-align: left;
   line-height: 200%;
   margin-left: 10px;
-  padding-top: 150px;
-  padding-right: 100px;
-  padding-bottom: 100px;
-}
-
-h5 {
-  font-family: 'ibm plex mono', sans-serif;
-  font-size: 15px;
-  color: pink;
-  text-align: center;
-  padding-top: 20px;
+  padding: 150px 100px 100px 0;
 }
 
 .aboutphoto {
-  max-width: 1000px;
-  height: 500px;
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 50px;
-  padding-bottom: 100px;
+  max-width: 600px;
+  padding: 100px 50px 100px 80px;
   float: left;
 }
 
@@ -149,17 +145,12 @@ h5 {
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 100px;
+  padding: 50px 100px;
 }
 
 .portfolio-item {
   width: 45%;
   margin-bottom: 10px;
-}
-
-.portfolio-item img:hover {
-  opacity: 50%;
-  transition: 0.5s;
 }
 
 .portfolio-item img {
