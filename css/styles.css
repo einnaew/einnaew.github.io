@@ -122,14 +122,17 @@ section {
   flex-direction: row;
 }
 
-p {
+p, h1 {
   font-family: 'cooper hewitt', sans-serif;
   font-size: 14px;
   letter-spacing: 0.15em;
   color: pink;
+  line-height: 200%;
+}
+
+.abouttext {
   float: right;
   text-align: left;
-  line-height: 200%;
   margin-left: 10px;
   padding: 150px 100px 100px 0;
 }
@@ -138,6 +141,11 @@ p {
   max-width: 600px;
   padding: 100px 50px 100px 80px;
   float: left;
+}
+
+h1 {
+    padding: 150px 10px 10px 0;
+    text-align: left;
 }
 
 .container {
@@ -160,5 +168,5 @@ p {
 }
 
 iframe {
-  padding-top: 15px;
+  padding-top: 40px;
 }
