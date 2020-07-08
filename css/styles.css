@@ -169,7 +169,7 @@ p, figcaption {
   width: 100%;
 }
 
-iframe {
+iframe, audio {
   padding-top: 40px;
 }
 
