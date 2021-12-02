@@ -15,6 +15,7 @@ a {
 .button {
   font-family: 'cooper hewitt', sans-serif;
   font-size: 23px;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.25em;
   animation-duration: 0.01s;
@@ -35,7 +36,7 @@ a {
 
 .traditional_art:hover, .digital_art:hover, .photo:hover, .video:hover, .about:hover {
   animation-play-state: paused;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration-line: underline;
   text-decoration-color: pink;
 }
@@ -94,6 +95,7 @@ a {
   font-family: 'cooper hewitt', sans-serif;
   letter-spacing: 0.15em;
   font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
   font-size: 17px;
 }
@@ -125,6 +127,7 @@ section {
 p, figcaption {
   font-family: 'cooper hewitt', sans-serif;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.15em;
   color: pink;
   line-height: 200%;
