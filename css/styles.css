@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  height: 100vh;
+  margin: 0;
+
 }
 
 html {
@@ -22,6 +25,7 @@ a {
   animation-name: textflicker;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  padding: 20px;
 }
 
 @keyframes textflicker {
@@ -41,16 +45,25 @@ a {
   text-decoration-color: pink;
 }
 
-.top_splash, .lower_splash {
+.top_splash {
   display: flex;
   justify-content: space-between;
+  flex: 1;
 }
 
 .middle_splash {
   display: flex;
   justify-content: center;
+  flex: 1;
+  align-items: center;
 }
 
+.lower_splash {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: flex-end;
+}
 /*navigation bar*/
 .navigation {
   display: flex;
@@ -84,6 +97,9 @@ a {
 .fadein {
     opacity: 0;
     transition: opacity 0.75s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 body.loaded .fadein {
@@ -144,16 +160,18 @@ p, figcaption {
   width: 100%;
 }
 
-iframe, audio {
-  padding-top: 40px;
+figure {
+  display: flex;
+  align-items: center;
+      flex-direction: column;
 }
 
 .video-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+
   padding-top: 20px;
+      flex-direction: column;
 }
 
 .video-caption {
