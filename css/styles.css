@@ -13,11 +13,11 @@ a {
 
 /*splash page link animation*/
 .button {
-  font-family: 'cooper hewitt', sans-serif;
+  font-family: 'arial';
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 50;
   line-height: 100%;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   animation-duration: 0.01s;
   animation-name: textflicker;
   animation-iteration-count: infinite;
@@ -34,49 +34,21 @@ a {
   }
 }
 
-.traditional_art:hover, .digital_art:hover, .photo:hover, .video:hover, .about:hover {
+.traditional_art:hover, .digital_art:hover, .photo:hover, .video:hover, .sound:hover, .about:hover {
   animation-play-state: paused;
-  font-weight: 700;
+  font-weight: 100;
   text-decoration-line: underline;
   text-decoration-color: pink;
 }
 
-/*splash page link positioning*/
-.traditional_art {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 25px;
+.top_splash, .lower_splash {
+  display: flex;
+  justify-content: space-between;
 }
 
-.digital_art {
-  position: absolute;
-  top: 0;
-  right: 0%;
-  padding: 25px;
-}
-
-.photo {
-  position: absolute;
-  bottom: 0%;
-  left: 0;
-  padding: 25px;
-}
-
-.video {
-  bottom: 0%;
-  right: 0%;
-  position: absolute;
-  padding: 25px;
-}
-
-.about {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+.middle_splash {
+  display: flex;
+  justify-content: center;
 }
 
 /*navigation bar*/
@@ -92,10 +64,10 @@ a {
 }
 
 .navigation a {
-  font-family: 'cooper hewitt', sans-serif;
+  font-family: 'arial';
   letter-spacing: 0.15em;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 100;
   text-decoration: none;
   font-size: 17px;
 }
@@ -125,9 +97,9 @@ section {
 }
 
 p, figcaption {
-  font-family: 'cooper hewitt', sans-serif;
+  font-family: 'arial';
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 100;
   letter-spacing: 0.15em;
   color: pink;
   line-height: 200%;
