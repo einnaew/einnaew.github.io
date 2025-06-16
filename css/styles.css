@@ -27,7 +27,7 @@ a {
   animation-direction: alternate;
   padding: 20px;
 }
-
+//
 @keyframes textflicker {
   from {
     text-shadow: 1px 0 0 #FF00E0, -2px 0 0 #15FF00;
@@ -37,7 +37,7 @@ a {
     text-shadow: 2px 0.5px 2px #FF00E0, -1px -0.5px 2px #15FF00;
   }
 }
-
+//
 .traditional_art:hover, .digital_art:hover, .photo:hover, .video:hover, .sound:hover, .about:hover {
   animation-play-state: paused;
   font-weight: 100;
